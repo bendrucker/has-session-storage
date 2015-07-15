@@ -1,7 +1,7 @@
 {
   "name": "has-session-storage",
   "main": "index.js",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Detect sessionStorage support",
   "license": "MIT",
   "repository": "bendrucker/has-session-storage",
