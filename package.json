@@ -1,0 +1,35 @@
+{
+  "name": "has-session-storage",
+  "main": "index.js",
+  "version": "0.0.0",
+  "description": "Detect sessionStorage support",
+  "license": "MIT",
+  "repository": "bendrucker/has-session-storage",
+  "author": {
+    "name": "Ben Drucker",
+    "email": "bvdrucker@gmail.com",
+    "url": "bendrucker.me"
+  },
+  "scripts": {
+    "test": "standard && tape test.js"
+  },
+  "keywords": [
+    "session",
+    "storage",
+    "sessionStorage",
+    "feature",
+    "detection",
+    "browser"
+  ],
+  "devDependencies": {
+    "proxyquire": "~1.6.0",
+    "standard": "^4.0.0",
+    "tape": "^4.0.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "global": "~4.3.0"
+  }
+}
