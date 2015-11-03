@@ -2,13 +2,15 @@
 
 var window = require('global/window')
 
-module.exports = (function detectSessionStorage (sessionStorage, data) {
-  if (!sessionStorage) return false
+module.exports = (function detectSessionStorage (key) {
   try {
-    sessionStorage.setItem(data, data)
-    sessionStorage.removeItem(data)
+    var sessionStorage = window.sessionStorage
+    if (!sessionStorage) return false
+
+    sessionStorage.setItem(key, key)
+    sessionStorage.removeItem(key)
     return true
   } catch (_) {
     return false
   }
-})(window.sessionStorage, 'HAS_SESSIONS_STORAGE')
+})('HAS_SESSIONS_STORAGE')
